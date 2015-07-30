@@ -8,7 +8,10 @@
 eNotasGW::configure(array(
 	'apiKey' => 'MWVmOGYzYWQtZjVhMy00YjQ1LWI1ZWEtZWY0YTkxODkwMDAw'
 ));
+~~~
 
+###Emitindo uma nota fiscal
+~~~
 eNotasGW::$NFeApi->emitir(array(
 	'idExterno' => '5', //id para mapeamento com sistema de origem (opcional)
 	'cliente' => array(
