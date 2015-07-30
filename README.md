@@ -1,9 +1,4 @@
 # eNotas GW PHP client
-
-##Simples de usar! 
-
-##Exemplos:
-
 ~~~
 eNotasGW::configure(array(
 	'apiKey' => 'MWVmOGYzYWQtZjVhMy00YjQ1LWI1ZWEtZWY0YTkxODkwMDAw'
