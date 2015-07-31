@@ -15,7 +15,7 @@ eNotasGW::$NFeApi->emitir($idEmpresa, array(
 	'cliente' => array(
 		'nome' => 'Nome Cliente',
 		'email' => 'cliente@mail.com',
-		'cpfCpnj' => '23857396237',
+		'cpfCnpj' => '23857396237',
 		'endereco' => array(
 			'uf' => 'MG', 
 			'cidade' => 'Belo Horizonte',
