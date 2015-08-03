@@ -11,6 +11,7 @@ eNotasGW::configure(array(
 $idEmpresa = '484FB0C5-969E-46AD-A047-8A0DB54667B4';
 
 eNotasGW::$NFeApi->emitir($idEmpresa, array(
+	'tipo' => 'NFS-e',
 	'idExterno' => '5', //id para mapeamento com sistema de origem (opcional)
 	'cliente' => array(
 		'nome' => 'Nome Cliente',
