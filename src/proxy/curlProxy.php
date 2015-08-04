@@ -31,22 +31,22 @@
 					break;
 			}
 		  
-				$request->headers[] = 'Content-Type: ' . $request->contentType;
-				$options[CURLOPT_HTTPHEADER] = $request->headers;
+			$request->headers[] = 'Content-Type: ' . $request->contentType;
+			$options[CURLOPT_HTTPHEADER] = $request->headers;
 
-				$ch = curl_init();
-				curl_setopt_array($ch, $options);
+			$ch = curl_init();
+			curl_setopt_array($ch, $options);
 
-				$response = new \eNotasGW\Api\response();
-				$response->body = curl_exec($ch);
-				$response->contentType = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
-				$response->code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+			$response = new \eNotasGW\Api\response();
+			$response->body = curl_exec($ch);
+			$response->contentType = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
+			$response->code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-				if($response->code != 200 && $response->isEmpty()) {
-					$response->faultMessage = curl_error($ch);
-				}
+			if($response->code != 200 && $response->isEmpty()) {
+				$response->faultMessage = curl_error($ch);
+			}
 
-				return $response;
+			return $response;
 		}
 
 		private function setRequestBody($request, &$options) {
