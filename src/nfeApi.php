@@ -11,7 +11,7 @@
 		 * 
 		 * @param string $idEmpresa id da empresa para a qual a nota será emitida
 		 * @param mixed $dadosNFe dados da NFe a ser emitida
-		 * @return string	idNFe	retorna o id único da NFe no eNotas GW
+		 * @return string $nfeId retorna o id único da NFe no eNotas GW
 		 */
 		public function emitir($idEmpresa, $dadosNFe) {
 			$result = $this->callOperation(array(
@@ -32,7 +32,7 @@
 		 * Cancela uma determinada Nota Fiscal
 		 * @param string $nfeId Identificador Único da Nota Fiscal
 		 * @param string $idEmpresa id da empresa para a qual a nota será emitida
-		 * @return string idNFe retorna o id único da NFe no eNotas GW
+		 * @return string $nfeId retorna o id único da NFe no eNotas GW
 		 */
 		public function cancelar($idEmpresa, $nfeId) {
 			$result = $this->callOperation(array(
@@ -53,7 +53,7 @@
 		 * Cancela uma determinada Nota Fiscal
 		 * @param string $idExterno id externo (mapeamento com sistema de origem)
 		 * @param string $idEmpresa id da empresa para a qual a nota será emitida
-		 * @return string idNFe retorna o id único da NFe no eNotas GW
+		 * @return string $nfeId retorna o id único da NFe no eNotas GW
 		 */
 		public function cancelarPorIdExterno($idEmpresa, $idExterno) {
 			$result = $this->callOperation(array(
@@ -75,7 +75,7 @@
 		 * 
 		 * @param string $idEmpresa id da empresa para a qual a nota será emitida
 		 * @param string $nfeId Identificador Único da Nota Fiscal
-		 * @return	mixed	$dadosNFe	retorna os dados da nota como um array
+		 * @return	mixed $dadosNFe	retorna os dados da nota como um array
 		 */
 		public function consultar($idEmpresa, $nfeId) {
 			return $this->callOperation(array(
@@ -94,7 +94,7 @@
 		 * 
 		 * @param string $idEmpresa id da empresa para a qual a nota será emitida
 		 * @param string $idExterno id externo (mapeamento com sistema de origem)
-		 * @return	mixed	$dadosNFe	retorna os dados da nota como um array
+		 * @return	mixed $dadosNFe	retorna os dados da nota como um array
 		 */
 		public function consultarPorIdExterno($idEmpresa, $idExterno) {
 			return $this->callOperation(array(
@@ -116,7 +116,7 @@
 		* @param int $pageSize quantidade de registros por página
 		* @param string $dataInicial data inicial para pesquisa
 		* @param string $dataFinal data final para pesquisa
-		 * @return searchResult	$listaNFe	retorna uma lista contendo os registros encontrados na pesquisa
+		 * @return searchResult	$listaNFe retorna uma lista contendo os registros encontrados na pesquisa
 		 */
 		public function consultarPorPeriodo($idEmpresa, $pageNumber, $pageSize, $dataInicial, $dataFinal) {
 			$dataInicial = eNotasGWHelper::formatDate($dataInicial);
@@ -142,7 +142,7 @@
 		* 
 		* @param string $idEmpresa id da empresa para a qual a nota será emitida
 		* @param string $nfeId Identificador Único da Nota Fiscal
-		* @return	mixed	$dadosNFe	retorna os dados da nota como um array
+		* @return string xml da nota fiscal
 		*/
 		public function downloadXml($idEmpresa, $nfeId) {
 			return $this->callOperation(array(
@@ -157,11 +157,11 @@
 		}
 		
 		/**
-		* Download do xml de uma Nota Fiscal identificada pelo seu id externo (mapeamento com sistema de origem)
+		* Download do pdf de uma Nota Fiscal identificada pelo seu id externo (mapeamento com sistema de origem)
 		* 
 		* @param string $idEmpresa id da empresa para a qual a nota será emitida
 		* @param string $nfeId Identificador Único da Nota Fiscal
-		* @return	mixed	$dadosNFe	retorna os dados da nota como um array
+		* @return os bytes do arquivo pdf
 		*/
 		public function downloadPdf($idEmpresa, $nfeId) {
 			return $this->callOperation(array(
@@ -181,7 +181,7 @@
 		* 
 		* @param string $idEmpresa id da empresa para a qual a nota será emitida
 		* @param string $idExterno id externo (mapeamento com sistema de origem)
-		* @return	mixed	$dadosNFe	retorna os dados da nota como um array
+		* @return string xml da nota fiscal
 		*/
 		public function downloadXmlPorIdExterno($idEmpresa, $idExterno) {
 			return $this->callOperation(array(
@@ -200,7 +200,7 @@
 		* 
 		* @param string $idEmpresa id da empresa para a qual a nota será emitida
 		* @param string $idExterno id externo (mapeamento com sistema de origem)
-		* @return	mixed	$dadosNFe	retorna os dados da nota como um array
+		* @return os bytes do arquivo pdf
 		*/
 		public function downloadPdfPorIdExterno($idEmpresa, $idExterno) {
 			return $this->callOperation(array(
