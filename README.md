@@ -1,7 +1,7 @@
 # eNotas GW PHP client
 ~~~
 eNotasGW::configure(array(
-	'apiKey' => 'MWVmOGYzYWQtZjVhMy00YjQ1LWI1ZWEtZWY0YTkxODkwMDAw'
+	'apiKey' => '<sua api key>'
 ));
 ~~~
 
