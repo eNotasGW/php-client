@@ -17,7 +17,7 @@
 	set_error_handler("handleError");
 
 	eNotasGW::configure(array(
-		'apiKey' => 'ZDU0ZWE5MGQtMTY4Ny00NjljLTkwYjEtNDkxZjU2YTkwMDAw'
+		'apiKey' => '<api key>'
 	));
 	
 	function downloadXml($empresaId, $nfeId, $nfeNumero) {
