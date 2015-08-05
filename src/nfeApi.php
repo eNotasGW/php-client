@@ -81,10 +81,10 @@
 			return $this->callOperation(array(
 			  'path' => '/empresas/{empresaId}/nfes/{nfeId}',
 			  'parameters' => array(
-				  'path' => array(
-					  'empresaId' => $idEmpresa,
-					  'nfeId' => $nfeId
-				  )
+					'path' => array(
+						'empresaId' => $idEmpresa,
+						'nfeId' => $nfeId
+					)
 				)
 			));
 		}
@@ -98,12 +98,12 @@
 		 */
 		public function consultarPorIdExterno($idEmpresa, $idExterno) {
 			return $this->callOperation(array(
-			  'path' => '/empresas/{empresaId}/nfes/porIdExterno/{idExterno}',
-			  'parameters' => array(
-				  'path' => array(
-					  'empresaId' => $idEmpresa,
-					  'idExterno' => $idExterno
-				  )
+				'path' => '/empresas/{empresaId}/nfes/porIdExterno/{idExterno}',
+				'parameters' => array(
+					'path' => array(
+						'empresaId' => $idEmpresa,
+						'idExterno' => $idExterno
+					)
 				)
 			));
 		}
@@ -123,16 +123,16 @@
 			$dataFinal = eNotasGWHelper::formatDate($dataFinal);
 		
 			return $this->callOperation(array(
-			  'path' => '/empresas/{empresaId}/nfes',
-			  'parameters' => array(
-				  'path' => array(
-					  'empresaId' => $idEmpresa
-				  ),
-				  'query' => array(
-					  'pageNumber' => $pageNumber,
-					  'pageSize' => $pageSize,
-					  'filter' => "dataCriacao ge '{$dataInicial}' and dataCriacao le '{$dataFinal}'"
-				  )
+				'path' => '/empresas/{empresaId}/nfes',
+				'parameters' => array(
+					'path' => array(
+						'empresaId' => $idEmpresa
+					),
+					'query' => array(
+						'pageNumber' => $pageNumber,
+						'pageSize' => $pageSize,
+						'filter' => "dataCriacao ge '{$dataInicial}' and dataCriacao le '{$dataFinal}'"
+					)
 				)
 			));
 		}
