@@ -109,15 +109,15 @@
 		}
 
 		/**
-		 * Consulta notas fiscais emitidas em um determinado período
-		 * 
+		* Consulta notas fiscais emitidas em um determinado período
+		* 
 		* @param string $idEmpresa id da empresa para a qual a nota será emitida
 		* @param int $pageNumber numero da página no qual a pesquisa será feita
 		* @param int $pageSize quantidade de registros por página
 		* @param string $dataInicial data inicial para pesquisa
 		* @param string $dataFinal data final para pesquisa
-		 * @return searchResult	$listaNFe retorna uma lista contendo os registros encontrados na pesquisa
-		 */
+		* @return searchResult	$listaNFe retorna uma lista contendo os registros encontrados na pesquisa
+		*/
 		public function consultarPorPeriodo($idEmpresa, $pageNumber, $pageSize, $dataInicial, $dataFinal) {
 			$dataInicial = eNotasGWHelper::formatDate($dataInicial);
 			$dataFinal = eNotasGWHelper::formatDate($dataFinal);

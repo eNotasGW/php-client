@@ -1,7 +1,7 @@
 <?php
 	header('Content-Type: text/html; charset=utf-8');	
 	
-	require('..\src\eNotasGW.php');
+	require('../src/eNotasGW.php');
 	
 	use eNotasGW\Api\Exceptions as Exceptions;
 
@@ -24,7 +24,13 @@
 		
 		*/
 		
-		$xmlFileName = "Downloads\NF-{$nfeId}.pdf";
+		$folder = 'Downloads';
+		
+		if (!file_exists($folder)) {
+			mkdir($folder, 0777, true);
+		}
+		
+		$xmlFileName = "{$folder}/NF-{$nfeId}.xml";
 		file_put_contents($xmlFileName, $xml);
 		echo "Download do xml, arquivo salvo em \"{$xmlFileName}\"";
 	}

@@ -1,19 +1,19 @@
 <?php
 	header('Content-Type: text/html; charset=utf-8');	
 	
-	require('..\src\eNotasGW.php');
+	require('../src/eNotasGW.php');
 	
 	use eNotasGW\Api\Exceptions as Exceptions;
 
 	eNotasGW::configure(array(
-		'apiKey' => '<api key>'
+		'apiKey' => 'ZDU0ZWE5MGQtMTY4Ny00NjljLTkwYjEtNDkxZjU2YTkwMDAw'
 	));
 	
-	$empresaId = 'a9f9d282-fdb9-4259-a7b8-2f19be4da06d';
+	$empresaId = '97fe718e-981d-4477-9430-3b9552a90000';
 	
 	try
 	{
-		$nfeId = 'ab765f39-a2e0-4c4b-88b4-4b6b4a2baace';
+		$nfeId = '9c13bfb9-9415-443f-9abd-6cc758a90000';
 		$pdf = eNotasGW::$NFeApi->downloadPdf($empresaId, $nfeId);
 		
 		/*
@@ -24,7 +24,13 @@
 		
 		*/
 		
-		$pdfFileName = "Downloads\NF-{$nfeId}.pdf";
+		$folder = 'Downloads';
+		
+		if (!file_exists($folder)) {
+			mkdir($folder, 0777, true);
+		}
+		
+		$pdfFileName = "{$folder}/NF-{$nfeId}.pdf";
 		file_put_contents($pdfFileName, $pdf);
 		echo "Download do pdf, arquivo salvo em \"{$pdfFileName}\"";
 	}
