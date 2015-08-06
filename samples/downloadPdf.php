@@ -6,14 +6,14 @@
 	use eNotasGW\Api\Exceptions as Exceptions;
 
 	eNotasGW::configure(array(
-		'apiKey' => 'ZDU0ZWE5MGQtMTY4Ny00NjljLTkwYjEtNDkxZjU2YTkwMDAw'
+		'apiKey' => '<api key>'
 	));
 	
-	$empresaId = '97fe718e-981d-4477-9430-3b9552a90000';
+	$empresaId = 'a9f9d282-fdb9-4259-a7b8-2f19be4da06d';
 	
 	try
 	{
-		$nfeId = '9c13bfb9-9415-443f-9abd-6cc758a90000';
+		$nfeId = 'ab765f39-a2e0-4c4b-88b4-4b6b4a2baace';
 		$pdf = eNotasGW::$NFeApi->downloadPdf($empresaId, $nfeId);
 		
 		/*
