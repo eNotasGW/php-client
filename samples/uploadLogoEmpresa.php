@@ -14,7 +14,7 @@
 	
 	try
 	{
-		$file = fileParameter::fromPath('C:\Virtual Group\eNotas\Trunk\ENotas.NFeService\ENotas.NFeService.Application.Provedores\Operacoes\Reports\Images\eNotas-black.png', 
+		$file = fileParameter::fromPath('{logo image path}', 
 			'image/png', 'logo.png');
 		
 		eNotasGW::$EmpresaApi->atualizarLogo($empresaId, $file);
