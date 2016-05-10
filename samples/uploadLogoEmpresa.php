@@ -7,10 +7,10 @@
 	use eNotasGW\Api\fileParameter as fileParameter;
 
 	eNotasGW::configure(array(
-		'apiKey' => '<Api key>'
+		'apiKey' => '{api key}',
 	));
 	
-	$empresaId = '{id empresa}';
+	$empresaId = '{empresa id}';
 	
 	try
 	{
