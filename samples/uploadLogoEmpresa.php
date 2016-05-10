@@ -7,8 +7,7 @@
 	use eNotasGW\Api\fileParameter as fileParameter;
 
 	eNotasGW::configure(array(
-		'apiKey' => 'YmZiMmFjZmQtOTc4MC00ZDdhLThiOGUtOTgwMWY4MTQwMTAw',
-		//'baseUrl' => 'http://localhost:8081'
+		'apiKey' => '<Api key>'
 	));
 	
 	$empresaId = '37D8C01E-0D9C-434E-B5C3-CE21F8140100';
