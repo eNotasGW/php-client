@@ -110,7 +110,7 @@
 					$pathParams = $params['path'];
 
 					foreach($pathParams as $name => $value) {
-						$path = str_replace('{' . $name . '}', $value, $path);
+						$path = str_replace('{' . $name . '}', rawurlencode($value), $path);
 					}
 				}
 			  
