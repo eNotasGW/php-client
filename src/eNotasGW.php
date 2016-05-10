@@ -8,6 +8,8 @@
 
 	require('apiBase.php');
 	require('nfeApi.php');
+	require('empresaApi.php');
+	require('servicosMunicipaisApi.php');
 
 	require('fileParameter.php');
 	require('request.php');
@@ -37,6 +39,7 @@
 		public static $EmpresaApi;
 		public static $NFeApi;
 		public static $WebHookApi;
+		public static $ServicosMunicipaisApi;
 
 		public static function configure($config) {
 			$config = (object)$config;
@@ -68,7 +71,7 @@
 				self::$_trustedCAListPath = $config->_trustedCAListPath;
 			}
 			else {
-				self::$_trustedCAListPath = dirname(__FILE__) . '\files\ca-bundle.crt';
+				self::$_trustedCAListPath = dirname(__FILE__) . '/files/ca-bundle.crt';
 			}
 
 			self::$_versionedBaseUrl = self::$_baseUrl . '/v' . self::$_version;
@@ -85,6 +88,8 @@
 		private static function init() {
 			self::$_proxy = self::createProxy();
 			self::$NFeApi = new api\nfeApi(self::$_proxy);
+			self::$EmpresaApi = new api\empresaApi(self::$_proxy);
+			self::$ServicosMunicipaisApi = new api\servicosMunicipaisApi(self::$_proxy);
 		}
 
 		private static function createProxy() {
