@@ -10,7 +10,7 @@
 		'apiKey' => '<Api key>'
 	));
 	
-	$empresaId = '37D8C01E-0D9C-434E-B5C3-CE21F8140100';
+	$empresaId = '{id empresa}';
 	
 	try
 	{
