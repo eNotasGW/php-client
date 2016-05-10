@@ -9,8 +9,8 @@
 		'apiKey' => '<api key>'
 	));
 	
-	$empresaId = 'a9f9d282-fdb9-4259-a7b8-2f19be4da06d';
-	$idExterno = '1';
+	$empresaId = '{empresa id}';
+	$idExterno = '{id de mapeamento no sistema de origem}';
 	
 	try
 	{
