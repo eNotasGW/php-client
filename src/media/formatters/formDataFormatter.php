@@ -7,14 +7,15 @@
 		public function encode($objData, &$contentType) {
 			$body = array();
 			$boundary = '---------------------' . md5(mt_rand() . microtime());
-			$contentType =  'Content-Type: multipart/form-data; boundary=' . $boundary;
+			$contentType = 'multipart/form-data; boundary=' . $boundary;
 
 		  if(is_array($objData)) {
 			foreach($objData as $name => $value) {
 				$name = $this->removeNotAllowedChars($name);
-
+				$body[] = "\r\n--" . $boundary;
+				
 				if(is_a($value, 'eNotasGW\Api\fileParameter')) {
-					$this->appendFileParameter($value, $body);   
+					$this->appendFileParameter($name, $value, $body);   
 				}
 				else {
 					$this->appendParameter($name, $value, $body);
@@ -24,10 +25,10 @@
 		  
 		  $body[] = "\r\n--" . $boundary . "--\r\n";
 		  
-		  return $body;
+		  return implode("\r\n", $body);
 		}
 
-		private function appendParameter($name, $value, $body) {
+		private function appendParameter($name, $value, &$body) {
 			$body[] = implode("\r\n", array(
 				"Content-Disposition: form-data; name=\"{$name}\"",
 				'',
@@ -35,11 +36,11 @@
 			));
 		}
 
-		private function appendFileParameter($file, $body) {    
+		private function appendFileParameter($name, $file, &$body) {    
 			$fileName = $file->name;
 
 			$body[] = implode("\r\n", array(
-				"Content-Disposition: form-data; name=\"{$fileName}\"; filename=\"{$fileName}\"",
+				"Content-Disposition: form-data; name=\"{$name}\"; filename=\"{$fileName}\"",
 				'Content-Type: ' . (isset($file->contentType) ? $file->contentType : 'application/octet-stream'),
 				'',
 				$file->rawData, 
@@ -47,7 +48,7 @@
 		}
 
 		private function removeNotAllowedChars($name) {
-			return str_replace($self::_notAllowedChars, "_", $name);
+			return str_replace(self::$_notAllowedChars, "_", $name);
 		}
 
 		public function decode($encodedData) {
