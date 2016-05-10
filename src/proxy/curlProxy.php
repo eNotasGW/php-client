@@ -31,9 +31,11 @@
 					break;
 			}
 		  
+		    //workaround to remove Expectation -> "Expect: 100-continue" that can be a problem in some networks
+			$request->headers[] = 'Expect:';
 			$request->headers[] = 'Content-Type: ' . $request->contentType;
 			$options[CURLOPT_HTTPHEADER] = $request->headers;
-
+			
 			$ch = curl_init();
 			curl_setopt_array($ch, $options);
 
