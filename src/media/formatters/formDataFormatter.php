@@ -12,7 +12,7 @@
 		  if(is_array($objData)) {
 			foreach($objData as $name => $value) {
 				$name = $this->removeNotAllowedChars($name);
-				$body[] = "\r\n--" . $boundary;
+				$body[] = "--" . $boundary;
 				
 				if(is_a($value, 'eNotasGW\Api\fileParameter')) {
 					$this->appendFileParameter($name, $value, $body);   
@@ -23,7 +23,7 @@
 			}
 		  }
 		  
-		  $body[] = "\r\n--" . $boundary . "--\r\n";
+		  $body[] = "--" . $boundary . "--\r\n";
 		  
 		  return implode("\r\n", $body);
 		}
