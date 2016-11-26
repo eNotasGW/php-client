@@ -7,7 +7,7 @@
 		}
 
 		/**
-		* Consulta notas fiscais emitidas em um determinado período
+		* Consulta serviços municipais que podem ser utilizados para emissão de NFS-e nesta prefeitura
 		* 
 		* @param string $uf sigla do estado
 		* @param string $cidade nome da cidade
