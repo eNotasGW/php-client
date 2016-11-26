@@ -9,6 +9,7 @@
 	require('apiBase.php');
 	require('nfeApi.php');
 	require('empresaApi.php');
+	require('prefeituraApi.php');
 	require('servicosMunicipaisApi.php');
 
 	require('fileParameter.php');
@@ -38,7 +39,7 @@
 
 		public static $EmpresaApi;
 		public static $NFeApi;
-		public static $WebHookApi;
+		public static $PrefeituraApi;
 		public static $ServicosMunicipaisApi;
 
 		public static function configure($config) {
@@ -89,6 +90,7 @@
 			self::$_proxy = self::createProxy();
 			self::$NFeApi = new api\nfeApi(self::$_proxy);
 			self::$EmpresaApi = new api\empresaApi(self::$_proxy);
+			self::$PrefeituraApi = new api\prefeituraApi(self::$_proxy);
 			self::$ServicosMunicipaisApi = new api\servicosMunicipaisApi(self::$_proxy);
 		}
 
