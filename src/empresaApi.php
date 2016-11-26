@@ -7,6 +7,21 @@
 		}
 		
 		/**
+		 * Insere ou atualiza uma empresa
+		 * 
+		 * @param mixed $dados dados da empresa que a serem utilizados na inserção ou atualização
+		 */
+		public function inserirAtualizar($dados) {
+			return $this->callOperation(array(
+				'method' => 'POST',
+				'path' => '/empresas',
+				'parameters' => array(
+					'body' => $dados
+				)
+			));
+		}
+		
+		/**
 		 * Atualiza a logo da empresa
 		 * 
 		 * @param string $idEmpresa id da empresa para a qual a nota será emitida
