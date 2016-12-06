@@ -7,6 +7,23 @@
 		}
 		
 		/**
+		 * Consulta uma Empresa pelo Identificador Único
+		 * 
+		 * @param string $id id da empresa que deseja consultar
+		 * @return mixed $dadosEmpresa dados da empresa como um array
+		 */
+		public function consultar($id) {
+			return $this->callOperation(array(
+			  'path' => '/empresas/{empresaId}',
+			  'parameters' => array(
+					'path' => array(
+						'empresaId' => $id
+					)
+				)
+			));
+		}
+		
+		/**
 		 * Insere ou atualiza uma empresa
 		 * 
 		 * @param mixed $dados dados da empresa que a serem utilizados na inserção ou atualização
