@@ -15,8 +15,8 @@
 	
 	class tipoAssinaturaDigital {
 		const NaoUtiliza = 0;
-        const Opcional = 1;
-        const Obrigatorio = 2;
+                const Opcional = 1;
+                const Obrigatorio = 2;
 	}
 		
 	eNotasGW::configure(array(
