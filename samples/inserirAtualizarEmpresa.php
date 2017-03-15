@@ -50,6 +50,7 @@
 			'regimeEspecialTributacao' => '0', //A lista de valores possíveis deve ser obtida pela api de caraterísticas da prefeitura
 			'codigoServicoMunicipal' => '181309901', //código do serviço municipal padrão para emissão de NFS-e
 			'descricaoServico' => 'SERVICO DE SERIGRAFIA / SILK-SCREEN', //Descrição do serviço municipal padrão para emissão de NFS-e (utilizado apenas na impressão da NFS-e) 
+			'aliquotaIss' => 2.00,
 			'configuracoesNFSeProducao' => array(
 				'sequencialNFe' => 1,
 				'serieNFe' => '2',
