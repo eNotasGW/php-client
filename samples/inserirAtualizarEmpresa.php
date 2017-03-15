@@ -36,6 +36,7 @@
 			'razaoSocial' => 'Empresa de Teste Ltda',
 			'nomeFantasia' => 'Empresa de Teste',
 			'optanteSimplesNacional' => true,
+			'incentivadorCultural' => false,
 			'email' => null,
 			'telefoneComercial' => '3132323131',
 			'endereco' => array(
