@@ -17,6 +17,7 @@
 		$nfeId = eNotasGW::$NFeApi->emitir($empresaId, array(
 			'tipo' => 'NFS-e',
 			'idExterno' => $idExterno,
+			'ambienteEmissao' => 'Homologacao', //'Homologacao' ou 'Producao'		
 			'cliente' => array(
 				'nome' => 'Fulano de Tal',
 				'email' => 'fulano@mail.com',
