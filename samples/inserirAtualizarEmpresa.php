@@ -11,6 +11,7 @@
 		const Certificado = 1;
 		const UsuarioESenha = 2;
 		const Token = 3;
+		const FraseSecretaESenha = 4;
 	}
 	
 	class tipoAssinaturaDigital {
