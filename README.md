@@ -1,12 +1,12 @@
 # eNotas GW PHP client
-~~~
+```php
 eNotasGW::configure(array(
 	'apiKey' => '<sua api key>'
 ));
-~~~
+```
 
-###Emitindo uma nota fiscal
-~~~
+### Emitindo uma nota fiscal
+```php
 
 $idEmpresa = '484FB0C5-969E-46AD-A047-8A0DB54667B4';
 
@@ -32,4 +32,4 @@ eNotasGW::$NFeApi->emitir($idEmpresa, array(
 	),
 	'valorTotal' => 10.05
 ));
-~~~
+```
