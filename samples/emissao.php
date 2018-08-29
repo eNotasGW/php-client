@@ -22,7 +22,7 @@
 				'nome' => 'Fulano de Tal',
 				'email' => 'fulano@mail.com',
 				'cpfCnpj' => '23857396237',
-				'tipoPessoa' => 'F',
+				'tipoPessoa' => 'F', //F - pessoa física | J - pessoa jurídica
 				'endereco' => array(
 					'uf' => 'MG', 
 					'cidade' => 'Belo Horizonte',
