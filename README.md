@@ -84,7 +84,7 @@ Ou se preferir, você pode ir diretamente para o arquivo que desejar:
 * [Emitindo uma nota fiscal](samples/emissao.php)
 * [Cancelando uma nota fiscal emitida](samples/cancelamento.php)
 * [Consultando uma nota fiscal](samples/consulta.php)
-* [Baixando o PDF de uma nota fiscal emitida](samples/downloadPdf.php.php)
+* [Baixando o PDF de uma nota fiscal emitida](samples/downloadPdf.php)
 * [Baixando o XML uma nota fiscal emitida](samples/downloadXml.php)
 * [Inserir ou Atualizar uma empresa](samples/inserirAtualizarEmpresa.php)
 * [Enviar o certificado de uma empresa](samples/uploadCertificadoEmpresa.php)
