@@ -47,6 +47,7 @@ Exemplo de emissão de nota fiscal:
 	eNotasGW::configure(array(
 		'apiKey' => '<sua api key>'
 	));
+	
 	$idEmpresa = '484FB0C5-969E-46AD-A047-8A0DB54667B4';
 
 	eNotasGW::$NFeApi->emitir($idEmpresa, array(
