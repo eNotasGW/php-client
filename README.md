@@ -77,24 +77,40 @@ Abaixo um exemplo simples para a emissão de nota fiscal:
 Todos os nossos exemplos podem ser encontrados na pasta "samples":
 * [Clique aqui para ir para a pasta de exemplos](samples/)
 
-Ou se preferir, você pode ir diretamente para o arquivo que desejar:
+Ou se preferir, você pode ir diretamente para o arquivo que desejar, também fornecemos a documentação oficial para cada um dos itens:
+
+#### Emissão de nota fiscal
 - [Emitindo uma nota fiscal](samples/emissao.php)
 	- [Saiba mais sobre os campos da emissão de uma nota fiscal](https://docs.enotasgw.com.br/v1/reference#emissao-de-nota-fiscal)
+	
+#### Cancelamento de uma nota fiscal emitida
 - [Cancelando uma nota fiscal emitida](samples/cancelamento.php)
 	- [Saiba mais sobre os campos de cancelamento de uma nota fiscal utilizando o Id Interno](https://docs.enotasgw.com.br/v1/reference#cancelar-nota-fiscal)
 	- [Saiba mais sobre os campos de cancelamento de uma nota fiscal utilizando o Id Externo](https://docs.enotasgw.com.br/v1/reference#cancelar-nota-fiscal)
+	
+#### Consultar uma nota fiscal
 - [Consultando uma nota fiscal](samples/consulta.php)
 	- [Saiba mais sobre os campos de consultar uma nota fiscal utilizando o Id Interno](https://docs.enotasgw.com.br/v1/reference#empresasempresaidnfesnfeid)
 	- [Saiba mais sobre os campos de consultar uma nota fiscal utilizando o Id Externo](https://docs.enotasgw.com.br/v1/reference#consultar-nota-fiscal-por-id-externo-identificador-externo)
+	
+#### Fazer o download de uma nota fiscal emitida
 - [Baixando o PDF de uma nota fiscal emitida](samples/downloadPdf.php)
 	- [Saiba mais sobre os campos para baixar o PDF de uma nota fiscal utilizando o Id Interno](https://docs.enotasgw.com.br/v1/reference#download-do-pdf)
 	- [Saiba mais sobre os campos para baixar o PDF de uma nota fiscal utilizando o Id Externo](https://docs.enotasgw.com.br/v1/reference#download-do-pdf-por-idexterno)
+	
+#### Fazer o download do XML de uma nota fiscal emitida
 - [Baixando o XML uma nota fiscal emitida](samples/downloadXml.php)
 	- [Saiba mais sobre os campos para baixar o XML de uma nota fiscal utilizando o Id Interno](https://docs.enotasgw.com.br/v1/reference#download-do-xml-da-nota-fiscal)
 	- [Saiba mais sobre os campos para baixar o XML de uma nota fiscal utilizando o Id Externo](https://docs.enotasgw.com.br/v1/reference#download-do-xml-por-id-externo)
+
+#### Inserir ou atualizar uma empresa
 - [Inserir ou Atualizar uma empresa](samples/inserirAtualizarEmpresa.php)
 	- [Saiba mais sobre os campos para Inserir/Atualizar uma empresa](https://docs.enotasgw.com.br/v1/reference#incluir-empresa)
+	
+#### Upload do certificado de uma empresa
 - [Enviar o certificado de uma empresa](samples/uploadCertificadoEmpresa.php)
 	- [Saiba mais sobre os campos para vincular o certificado de uma empresa](https://docs.enotasgw.com.br/v1/reference#vincular-certificado-empresa)
+	
+#### Upload do logo de uma empresa
 - [Enviar o logo de uma empresa](samples/uploadLogoEmpresa.php)
 	- [Saiba mais sobre os campos para vincular o logo de uma empresa](https://docs.enotasgw.com.br/v1/reference#vincular-logotipo)
