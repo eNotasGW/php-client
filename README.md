@@ -2,7 +2,7 @@
 
 Client escrito na linguagem PHP da API do eNotas Gateway, plataforma de emissâo automática de nota fiscal eletrônica de serviço (NFS-e), Produto (NF-e) e Consumidor (NFC-e).
 
-<span style="color:red;">No caso esta biblioteca deve ser utilizada para a emissão de NFS-e, caso você deseje emitir NF-e ou NFC-e utilize a</span> [bilioteca php-client-v2](https://github.com/eNotasGW/php-client-v2)**
+**No caso esta biblioteca deve ser utilizada para a emissão de NFS-e, caso você deseje emitir NF-e ou NFC-e utilize a** [bilioteca php-client-v2](https://github.com/eNotasGW/php-client-v2)**
 
 
 ## Documentação
@@ -29,7 +29,7 @@ Ou através do comando:
 
 Após baixar os arquivos disponibilizados aqui, basta que você copie estes arquivos para a pasta da sua aplicação e faça referência à classe eNotasGW.php e, além disso você também precisará de duas informações:
 
-* [API Key](samples/emissao.php)
+* [API Key](https://docs.enotasgw.com.br/v1/docs/como-obter-a-sua-api-key)
 * [Id da Empresa](https://docs.enotasgw.com.br/v1/docs/como-obter-o-id-da-empresa)
 
 
