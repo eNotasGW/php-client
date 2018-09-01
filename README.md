@@ -19,25 +19,10 @@ Ou através do comando:
 	$ git clone https://github.com/eNotasGW/php-client
 
 
-## Uso básico
+## Para utilizar o nosso cliente é fácil, veja:
 
-Após baixar os arquivos disponibilizados aqui, basta que você copie estes arquivos para a pasta da sua aplicação e faça referência à classe eNotasGW.php, e efetue a configuração da sua API Key, veja:
+Após baixar os arquivos disponibilizados aqui, basta que você copie estes arquivos para a pasta da sua aplicação e faça referência à classe eNotasGW.php e, efetue a configuração da sua API Key. Abaixo um exemplo simples para a emissão de nota fiscal:
 
-```php
-<?php
-	header('Content-Type: text/html; charset=utf-8');	
-	
-	require('../src/eNotasGW.php');
-	
-	eNotasGW::configure(array(
-		'apiKey' => '<sua api key>'
-	));
-?>
-```
-
-### Para utilizar o nosso cliente é fácil, veja:
-
-Exemplo de emissão de nota fiscal:
 ```php
 <?php
 	header('Content-Type: text/html; charset=utf-8');	
