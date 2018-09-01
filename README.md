@@ -7,7 +7,7 @@ Client escrito na linguagem PHP da API do eNotas Gateway, plataforma de emissâo
 Abaixo disponibilizamos as documentações oficiais do eNotas Gateway para consulta:
 * [Documentação de conceitos para utilização da API do eNotas GW](https://docs.enotasgw.com.br/docs)
 * [Documentação referencial dos endpoints da API do eNotas GW](https://docs.enotasgw.com.br/v1/reference)
-* [Swagger dos endpoints da API do eNotas GW](https://docs.enotasgw.com.br/v1/reference)
+* [Swagger dos endpoints da API do eNotas GW](http://app.enotasgw.com.br/docs)
 
 ## Instalação eNotas GW PHP client
 
