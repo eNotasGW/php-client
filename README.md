@@ -2,17 +2,20 @@
 
 Client escrito na linguagem PHP da API do eNotas Gateway, plataforma de emissâo automática de nota fiscal eletrônica de serviço (NFS-e), Produto (NF-e) e Consumidor (NFC-e).
 
+**No caso esta biblioteca deve ser utilizada para a emissão de NFS-e, caso você deseje emitir NF-e ou NFC-e utilize a [bilioteca php-client-v2](https://github.com/eNotasGW/php-client-v2)**
+
+
 ## Documentação
 
 Abaixo disponibilizamos as documentações oficiais do eNotas Gateway para consulta:
 * [Documentação de conceitos para utilização da API do eNotas GW](https://docs.enotasgw.com.br/docs)
 * [Documentação referencial dos endpoints da API do eNotas GW](https://docs.enotasgw.com.br/v1/reference)
-* [Swagger dos endpoints da API do eNotas GW](http://app.enotasgw.com.br/docs)
+* [Swagger dos endpoints da API V1 do eNotas GW](http://app.enotasgw.com.br/docs)
 
 ## Instalação eNotas GW PHP client
 
 Para instalar manualmente esta biblioteca, basta clonar o repositório GIT para a sua máquina, conforme imagem abaixo:
-![alt tag](https://raw.githubusercontent.com/eNotasGW/images-repository/master/php-client/clonando-repositorio.jpg)
+![Clonando um repositório Github](https://raw.githubusercontent.com/eNotasGW/images-repository/master/php-client/clonando-repositorio.jpg)
 
 Ou através do comando:
 
@@ -21,8 +24,14 @@ Ou através do comando:
 
 ## Para utilizar o nosso cliente é fácil, veja:
 
-Após baixar os arquivos disponibilizados aqui, basta que você copie estes arquivos para a pasta da sua aplicação e faça referência à classe eNotasGW.php e, efetue a configuração da sua API Key. Abaixo um exemplo simples para a emissão de nota fiscal:
+Após baixar os arquivos disponibilizados aqui, basta que você copie estes arquivos para a pasta da sua aplicação e faça referência à classe eNotasGW.php e, além disso você também precisará de duas informações:
 
+* [API Key](samples/emissao.php)
+* [Id da Empresa](samples/emissao.php)
+
+
+
+Abaixo um exemplo simples para a emissão de nota fiscal:
 ```php
 <?php
 	header('Content-Type: text/html; charset=utf-8');	
@@ -75,5 +84,3 @@ Ou se preferir, você pode ir diretamente para o arquivo que desejar:
 * [Inserir ou Atualizar uma empresa](samples/inserirAtualizarEmpresa.php)
 * [Enviar o certificado de uma empresa](samples/uploadCertificadoEmpresa.php)
 * [Enviar o logo de uma empresa](samples/uploadLogoEmpresa.php)
-
-
