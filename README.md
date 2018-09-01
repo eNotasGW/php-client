@@ -86,7 +86,7 @@ Ou se preferir, você pode ir diretamente para o arquivo que desejar, também fo
 #### Cancelamento de uma nota fiscal emitida
 - [Cancelando uma nota fiscal emitida](samples/cancelamento.php)
 	- [Saiba mais sobre os campos de cancelamento de uma nota fiscal utilizando o Id Interno](https://docs.enotasgw.com.br/v1/reference#cancelar-nota-fiscal)
-	- [Saiba mais sobre os campos de cancelamento de uma nota fiscal utilizando o Id Externo](https://docs.enotasgw.com.br/v1/reference#cancelar-nota-fiscal)
+	- [Saiba mais sobre os campos de cancelamento de uma nota fiscal utilizando o Id Externo](https://docs.enotasgw.com.br/v1/reference#cancelar-nota-fiscal-por-id-externo)
 	
 #### Consultar uma nota fiscal
 - [Consultando uma nota fiscal](samples/consulta.php)
