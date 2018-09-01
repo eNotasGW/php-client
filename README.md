@@ -1,6 +1,6 @@
 # eNotas GW PHP client
 
-Wrapper em PHP da API do eNotas Gateway, plataforma de emissâo automática de nota fiscal eletrônica de serviço (NFS-e), Produto (NF-e) e Consumidor (NFC-e).
+Client escrito na linguagem PHP da API do eNotas Gateway, plataforma de emissâo automática de nota fiscal eletrônica de serviço (NFS-e), Produto (NF-e) e Consumidor (NFC-e).
 
 ## Documentação
 
