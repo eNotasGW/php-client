@@ -27,7 +27,7 @@ Ou através do comando:
 Após baixar os arquivos disponibilizados aqui, basta que você copie estes arquivos para a pasta da sua aplicação e faça referência à classe eNotasGW.php e, além disso você também precisará de duas informações:
 
 * [API Key](samples/emissao.php)
-* [Id da Empresa](samples/emissao.php)
+* [Id da Empresa](https://docs.enotasgw.com.br/v1/docs/como-obter-o-id-da-empresa)
 
 
 
