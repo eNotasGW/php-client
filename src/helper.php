@@ -6,7 +6,7 @@
 			return $date->format('Y-m-d');
 		}
 
-		public static function formatDateTime($dateTime) {
+		public static function formatDateTime($date) {
 			return $date->format('Y-m-d H:i:s');
 		}
 	}
