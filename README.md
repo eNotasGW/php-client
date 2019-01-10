@@ -23,6 +23,9 @@ Ou através do comando:
 
 	$ git clone https://github.com/eNotasGW/php-client
 
+Para instalar através do composer, basta utilizar o comando:
+
+	composer require enotas/php-client
 
 ## Para utilizar o nosso cliente é fácil, veja:
 
