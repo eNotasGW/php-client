@@ -1,8 +1,6 @@
 <?php
 	namespace eNotasGW\Api;
 
-	use \eNotasGW as eNotasGW;
-	
 	class request {
 		/**
 		* The url to access on this Request
