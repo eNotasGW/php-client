@@ -16,7 +16,10 @@
 		protected function formatMessage() {	
 			$message = '';
 			$padding = '';
-
+			
+			/**
+			 *Correção para testar return de consulta de NFe 
+			 */
 			if(is_array($this->errors)){
 				foreach ($this->errors as &$error) {
 					$message .= $padding . "{$error->codigo} - {$error->mensagem}";
