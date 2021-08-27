@@ -16,9 +16,14 @@
 		protected function formatMessage() {	
 			$message = '';
 			$padding = '';
-		
-			foreach ($this->errors as &$error) {
-				$message .= $padding . "{$error->codigo} - {$error->mensagem}";
+
+			if(is_array($this->errors)){
+				foreach ($this->errors as &$error) {
+					$message .= $padding . "{$error->codigo} - {$error->mensagem}";
+					$padding = PHP_EOL;
+				}
+			} else {
+				$message .= $padding . "{$this->errors->Message}";
 				$padding = PHP_EOL;
 			}
 			
